@@ -1,0 +1,87 @@
+@media only screen and (max-width:992px) {
+    .rightBox{
+        display: none;
+    }
+    .navbar {
+        
+        background-color: #F7F6F9;
+    }
+    .navbar-light .navbar-toggler {
+        color: rgba(0,0,0,.55);
+        margin-top: 5px !important;
+        border-color: rgba(0,0,0,.1);
+    }
+    .justify-content-end {
+        justify-content: flex-end!important;
+        padding: 10px 0 !important;
+    
+    }
+    .nav-link{
+        border-bottom: 0.5px solid #c8c8c8;
+    }
+    .videoPopup {
+        margin: 20px 0;
+        position: relative;
+    }
+    #Pricing .pricingTitle{
+        width: 100% !important;
+    }
+    #Video .videoBox {
+        background-color: #F7F6F9;
+        border-radius: 8px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+    #Statistic .cardStatSecond {
+        background-color: #F7F6F9;
+        padding: 10px !important;
+        border-radius: 8px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        margin: 10px auto;
+    }
+    #Statistic .statSecond{
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 8px !important;
+    }
+    #Statistic .cardStat{
+        margin: 10px 0;
+        height: auto  !important;
+    }
+    #Home .leftBox {
+        background-color: #F7F6F9;
+        padding-left: 10px;
+    }
+    #Home .textBox {
+        padding-top: 5rem !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    #Home .textBox h1{
+        font-size: 54px !important;
+    }
+    footer .mailto {
+        display: flex;
+        justify-content: center !important;
+    }
+    footer .copywriter {
+        display: flex;
+        justify-content: center !important;
+    }
+    footer .footerContent {
+        margin: 20px 0 !important;
+    }
+    footer .to-top {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin: 0px 10px 10px 0;
+    }
+}

@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+}
+button{
+    cursor: pointer;
+}
+
+/* Navbar Start */
+.navbar{
+    z-index: 3;
+}
+.navbar-brand{
+    font-weight: 700;
+}
+
+.nav-link{
+    color: #000000 !important;
+    opacity: 1 !important;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Navbar End */
+
+/* Home Section Start */
+#Home{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    top: -50px;
+    z-index: 2;
+}
+#Home .leftBox{
+    background-color: #F7F6F9;
+    
+}
+
+#Home .rightBox {
+    width: 100%;
+    height: 100%;
+    background-image: url(../resources/img/rightBox.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#Home .textBox{
+    padding-top: 10rem;
+    margin-left: 100px;
+    width: 500px;
+   
+}
+#Home .textBox h1{
+    font-size: 84px;
+    font-weight: 700;
+    color: #000000;
+}
+#Home .textBox p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.015em;
+    color: #000000;
+
+}
+#Home .startBtn{
+    display: flex;
+    align-items: center;
+}
+#Home .btnStarted{
+    background-color: #000000;
+    border-radius: 20px;
+    color: #Fff;
+    padding: 10px 20px;
+    border: none;
+}
+#Home .btnFreeStarted{
+    background-color: transparent;
+    border-radius: 20px;
+    color: #000000;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+}
+
+#Home .infoBox{
+    display: flex;
+    align-items: center;
+    margin-top: 30px ;
+    padding-bottom: 50px;
+}
+#Home .boxFirst{
+    display: flex;
+    align-items: center;
+}
+#Home .boxFirst img{
+    width: 50%;
+}
+#Home .boxFirst span{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+}
+#Home .boxFirst .blackImg{
+    background-color: #000000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Home Section End */
+
+/* Stat Start */
+
+#Statistic .cardStat{
+    background-color: #F7F6F9;
+    padding: 30px;
+    width: 100%;
+    height: 630px;
+    border-radius: 8px;
+    position: relative;
+    gap: 20px;
+}
+
+#Statistic h1{
+    font-weight: 700;
+}
+#Statistic .cardStat img{
+    width: 100%;
+}
+#Statistic .statSecond {
+    position: relative;
+    z-index: 2;
+    left: 30px;
+    top: 3px;
+    height: 435px ;
+}
+#Statistic .cardStatSecond{
+    background-color: #F7F6F9;
+    padding: 50px;
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+#Statistic .cardImgSecond{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Statistic .cardStatSecond img{
+    width: 100%;
+}
+#Statistic .cardStatSecond button{
+    background-color: #055FFD;
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    color: #Fff;
+    font-weight: 500;
+    padding: 15px ;
+    font-size: 18px;
+}
+
+/* Stat End */
+
+
+/* Video Start */
+#Video .videoBox{
+    background-color: #F7F6F9;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+#Video h1{
+    font-weight: 700;
+}
+#Video .videoText button{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 60px;
+    border: none;
+    background: #000;
+    color: #fff;
+}
+#Video .playBox{
+    width: 60px;
+    height: 35px;
+    background: #fff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.blackOut {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+
+.videoPopup img{
+    width: 100%;
+}
+  
+.blackOut .popupAlignCenter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.blackOut .popupAlignCenter .popUpWrapper {
+    width: 80%;
+    max-width: 1280px;
+    max-height: 640px;
+    background-color: transparent;
+    z-index: 100;
+}
+  
+.blackOut .popupAlignCenter .popUpWrapper button.videoClose {
+    color: #999999;
+    font-weight: 400;
+    background: transparent;
+    font-size: 22px;
+    float: right;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    width: 40px;
+    margin-bottom: 10px;
+    height: 40px;
+}
+.videoPopup{
+    position: relative;
+}
+ .playBtnDiv{
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    left: 50%;
+    height: 50px;
+    display: flex;
+    background: #23272F1F;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+}
+.playBtnDiv i{
+    font-size: 24px;
+    font-weight: 600;
+}
+/* Video End */
+
+
+/* Pricing Start */
+#Pricing  .priceList{
+    background-color: #F7F6F9;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+#Pricing  .priceList ul{
+    padding: 0;
+}
+#Pricing  .priceList ul li{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+#Pricing  .priceList ul li .listChek{
+    width: 25px;
+    height: 25px;
+    background-color: #12DB63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 10px;
+}
+
+#Pricing .priceBtn button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 63px;
+    border: none;
+    color: #fff;
+    background-color: #000;
+}
+
+#Pricing .pricingTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+#Pricing .pricingTitle h1{
+    font-weight: 800;
+}
+#Pricing .black{
+    background-color: #000;
+    color: #fff;
+}
+
+#Pricing .black button{
+    background-color: #fff;
+    color: #000;
+}
+#Pricing .black .special{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Pricing .black .special .specialContent{
+    background-color: #12DB63;
+    color: #000;
+    padding: 5px 30px;
+    font-weight: 700
+    ;
+    border-radius: 53px;
+}
+/* Pricing End */
+
+/* Footer Start */
+footer{
+    background-color: #000;
+    padding: 20px 0;
+    color: #fff;
+    margin-top: 5rem;
+}
+footer .footerContent{
+    margin: 50px 0 ;
+}
+footer .footerContent p{
+    color: #Fff;
+    opacity: .7;
+    font-weight: 400;
+}
+
+footer .to-top{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+footer #return-to-top{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 26px;
+    height: 60px;
+}
+footer .startBtn{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+footer .btnStarted{
+    background-color: #fff;
+    border-radius: 20px;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+}
+footer .btnFreeStarted{
+    background-color: transparent;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+}
+footer .line{
+    width: 100%;
+    height: 0.1px;
+    background-color: #fff;
+    opacity: .2;
+    margin: 0;
+    padding: 0;
+}
+
+footer .copywriter{
+    display: flex;
+    justify-content: flex-end;
+
+}
+footer .copywriter a{
+    color: #ffff;
+    opacity: .7;
+    text-decoration: none;
+    font-size: 14px;
+}
+footer .mailto{
+    display: flex;
+    justify-content: flex-start;
+
+}
+footer .mailto a{
+    color: #ffff;
+    opacity: .7;
+    text-decoration: none;
+    font-size: 14px;
+}
+/* Footer End */
